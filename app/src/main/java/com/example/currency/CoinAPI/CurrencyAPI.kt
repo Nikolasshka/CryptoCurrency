@@ -1,0 +1,21 @@
+package com.example.currency.CoinAPI
+
+data class GeckoCoin(
+    val id: String,
+    val symbol: String,
+    val name: String,
+    val image: String,
+    val current_price: Double,
+    val market_cap: Float,
+    val market_cap_rank: Int,
+    val total_volume: Float,
+    val price_change_percentage_24h: Double,
+    val market_cap_change_percentage_24h: Double,
+    val circulating_supply: Double,
+    val total_supply: Double,
+    val ath: Double,
+    val ath_change_percentage: Double
+)
+data class GeckoCoinChart (
+    var prices: List<List<Float>>
+)
